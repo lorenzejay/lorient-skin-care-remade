@@ -3,7 +3,7 @@ import styled from "styled-components"
 import Hero from "../components/hero"
 import Layout from "../components/layout"
 import { graphql, useStaticQuery } from "gatsby"
-import { device, primary, secondary } from "../styles/globalstyles"
+import { device, secondary } from "../styles/globalstyles"
 
 export const AboutWrapper = styled.section`
   padding: 5%;

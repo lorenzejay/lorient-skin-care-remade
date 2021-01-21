@@ -38,7 +38,7 @@ const Service = context => {
   `)
 
   const { pageContext } = context
-  const { id, title, description, benefits, blogSlug } = pageContext
+  const { title, description, benefits, blogSlug } = pageContext
   return (
     <Layout>
       <Hero image={data.facial.childImageSharp.fluid} bigText={title} />
@@ -46,7 +46,7 @@ const Service = context => {
         <h2>{title}</h2>
         <p>{description}</p>
         <ul>
-          {benefits.map((benefit, i) => {
+          {benefits.map(benefit => {
             return <li key={benefit.id}>{benefit}</li>
           })}
         </ul>
@@ -55,7 +55,9 @@ const Service = context => {
         </Link>
         {blogSlug && (
           <Link to={blogSlug}>
-            <Button color={primary}>Learn More</Button>
+            <Button color={primary} to={blogSlug}>
+              Learn More
+            </Button>
           </Link>
         )}
       </ServiceWrapper>

@@ -20,7 +20,7 @@ export default function Template({
   const { frontmatter, html } = markdownRemark
   return (
     <Layout>
-      <Hero image={frontmatter.featuredImage.childImageSharp.fluid.src} />
+      <Hero image={frontmatter.featuredImage.childImageSharp.fluid} />
       <BTemplateWrapper className="blog-post-container">
         <div className="blog-post">
           <h1>{frontmatter.title}</h1>
