@@ -1,0 +1,14 @@
+[
+  {
+    "id": 1,
+    "name": "Jessica",
+    "description": "Lucy gives the best facials. She really takes the time ot understand my skin so she can tailor my treatments to what works best for me.",
+    "imageSrc": "../images/testimonial1.jpg"
+  },
+  {
+    "id": 2,
+    "name": "Kristina",
+    "description": "I love getting facials from Lucy. Not only do her facials leave my skin feeling fresh and hydrated, but she provides a calm, relaxing experience that puts me at ease and soothes both my mind and body.",
+    "imageSrc": "../images/testimonial2.jpg"
+  }
+]

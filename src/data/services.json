@@ -1,0 +1,64 @@
+[
+  {
+    "id": 1,
+    "slug": "/brightening-facial",
+    "title": "Brightening Facial",
+    "contrast": false,
+    "icon": "../images/woman.png",
+    "blogSlug": "",
+    "shortDescription": "Great solution if you are developing dark patches or spots in your skin. This is known as hyperpigmentation.",
+    "benefits": [
+      "Gets right at the source. of unwanted discoloration.",
+      "Dissolving Rogue pigment cells on the spot.",
+      "Clears aging dead surface cells.",
+      "Increases cellular microcirculation.",
+      "Pulls powerful skin brightening antioxidants.",
+      "Best if done in 4 concecutive results."
+    ]
+  },
+  {
+    "id": 2,
+    "slug": "/botanical-smoothing-facial",
+    "title": "Smoothing Facial",
+    "contrast": true,
+    "icon": "../images/bamboo.png",
+    "blogSlug": "",
+    "shortDescription": "Great if you have sensitive skin, redness on face. Using a restorative moisture mask you will leave feeling comfortable rather than irritated.",
+    "benefits": [
+      "Instantly subdues inflammation, visible redness and any reactions.",
+      "Removes dry, flaming skin, and surface irritants.",
+      "Restorative, Relaxing, and Soothing."
+    ]
+  },
+  {
+    "id": 3,
+    "slug": "/classical-nourishing-facial",
+    "title": "Nourishing Facial",
+    "contrast": true,
+    "icon": "../images/cream.png",
+    "blogSlug": "",
+    "shortDescription": "Gets rid of flaking dead skin. Leave looking fresh, dewy, and more radiant.",
+    "benefits": [
+      "Relaxing and Soothing.",
+      "Gentle deep cleansing lifts away dry and flaking dead skin.",
+      "Comes with Creamy Soothing Mask.",
+      "Helps skin soak up rejuvinating hydration.",
+      "Leave looking fresh and feeling radiant."
+    ]
+  },
+  {
+    "id": 4,
+    "slug": "/facial-ice-globes",
+    "title": "Cooling Globes",
+    "contrast": false,
+    "icon": "../images/towels.png",
+    "blogSlug": "/facial-ice-globes",
+    "shortDescription": "Tightens and plumps your skin. Great for closing pores, reducing previous scarring and provides natural headache and sinus relief.",
+    "benefits": [
+      "Tightens and plumps the skin.",
+      "Enhances blood circulation.",
+      "Brightens skin complextion.",
+      "Reduces Acne scarring. "
+    ]
+  }
+]
