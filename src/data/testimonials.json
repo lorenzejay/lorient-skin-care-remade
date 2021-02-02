@@ -2,7 +2,7 @@
   {
     "id": 1,
     "name": "Jessica",
-    "description": "Lucy gives the best facials. She really takes the time to understand my skin so she can tailor my treatments to what works best for me.",
+    "description": "Lucy gives the best facials. She really takes the time to understand my skin so she can tailor my treatments to what works best for me. I always worry that facials will break out my acne prone skin but I always leave clear and glowing",
     "imageSrc": "../images/testimonial1.jpg"
   },
   {
@@ -10,5 +10,11 @@
     "name": "Kristina",
     "description": "I love getting facials from Lucy. Not only do her facials leave my skin feeling fresh and hydrated, but she provides a calm, relaxing experience that puts me at ease and soothes both my mind and body.",
     "imageSrc": "../images/testimonial2.jpg"
+  },
+  {
+    "id": 3,
+    "name": "Vanessa",
+    "description": "Great relaxing ambience with soothing background music. Spa is clean and organized. Owner was accomidating with appointment times. Felt rejuvinated and relaxed. Face was felt soft, supple, and hydrated. Did'nt feel rushed at all.",
+    "imageSrc": "/"
   }
 ]

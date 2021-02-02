@@ -153,14 +153,17 @@ const Testimonials = () => {
           {data.allTestimonialsJson.edges.map(({ node }) => {
             return (
               <div>
-                <img
-                  className="testimonial-client-image"
-                  src={node.imageSrc.childImageSharp.fluid.src}
-                  alt="testimonial-autor"
-                />
+                {node.imageSrc && (
+                  <img
+                    className="testimonial-client-image"
+                    src={node.imageSrc.childImageSharp.fluid.src}
+                    alt="testimonial-autor"
+                  />
+                )}
                 <h3>{node.name}</h3>
                 {/* <h4>Customer</h4> */}
                 <p>{node.description}</p>
+
                 <img
                   className="testimonial-quote-image"
                   src={data.facial.childImageSharp.fluid.src}

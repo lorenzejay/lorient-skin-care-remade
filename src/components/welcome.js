@@ -123,7 +123,7 @@ const Welcome = () => {
         <img src={data.facial.childImageSharp.fluid.src} />
 
         <p>
-          L'ORIENT Skin Care specializes in facial skin care treatmenet. We
+          L'ORIENT Skin Care specializes in facial skin care treatment. We
           target your specific concerns and issues of your skin. We tailor every
           facial for your specific needs and leave your skin glowing and looking
           its best.
