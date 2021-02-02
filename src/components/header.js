@@ -1,80 +1,94 @@
-import { graphql, Link, useStaticQuery } from "gatsby"
+import { graphql, Link as LinkG, useStaticQuery } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
 import styled from "styled-components"
-import { device, primary } from "../styles/globalstyles"
+import { FaBars } from "react-icons/fa"
+// import { device, primary } from "../styles/globalstyles"
 
-export const Nav = styled.nav`
-  position: absolute;
-  top: 0;
-  z-index: 90;
-  width: 100%;
-  height: 12vh;
-
+export const Nav = styled.header`
+  //handle transitions here
+  /* background: #fff; */
+  height: 80px;
+  margin-top: -80px;
   display: flex;
   align-items: center;
+  font-size: 1rem;
+  position: sticky;
+  top: 0;
+  z-index: 60;
+`
+
+export const NavContainer = styled.div`
+  display: flex;
   justify-content: space-between;
-  padding: 0 7%;
-  background-color: transparent;
-  .logo,
-  a {
-    font-weight: 400;
-  }
-  .logo {
-    text-transform: uppercase;
-  }
-  ul {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+  align-items: center;
+  height: 80px;
+  z-index: 1;
+  width: 100%;
+  padding: 0 12px;
+  /* max-width: 1100px; */
+`
 
-    list-style: none;
-    li {
-      a {
-        font-size: 1.2rem;
-        color: ${primary};
-      }
-    }
-  }
+//we are grabbing the link from gatsby link
+export const NavLink = styled(LinkG)`
+  color: #000;
+  justify-self: flex-start;
+  cursor: pointer;
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+  margin-left: 6px;
+  font-weight: bold;
+  text-decoration: none;
+  text-transform: uppercase;
+`
 
-  @media ${device.mobileS} {
-    .logo {
-      font-size: 20px;
-      color: whitesmoke;
-    }
-    img {
-      width: 40px;
-    }
-    ul {
-      width: 50%;
-      li {
-        a {
-          font-size: 0.85rem;
-        }
-      }
-    }
-  }
+export const MobileIcon = styled.div`
+  display: none;
 
-  @media ${device.laptop} {
-    .logo {
-      font-size: 2rem;
-    }
-    img {
-      width: 60px;
-    }
-    ul {
-      width: 30%;
-      li {
-        a {
-          font-size: 1.2rem;
-          letter-spacing: 3px;
-        }
-      }
-    }
+  @media screen and (max-width: 768px) {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(-100%, 65%);
+    font-size: 1.8rem;
+    cursor: pointer;
+    color: #000;
+  }
+`
+export const NavMenu = styled.ul`
+  display: flex;
+  align-items: center;
+  list-style: none;
+  text-align: center;
+  margin-right: 22px;
+
+  @media screen and (max-width: 768px) {
+    display: none;
   }
 `
 
-const Header = ({ siteTitle }) => {
+export const NavItem = styled.li`
+  height: 80px;
+`
+
+//scroll links
+export const NavLinks = styled(LinkG)`
+  color: #000;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  padding: 0 1rem;
+  height: 100%;
+  cursor: pointer;
+
+  &.active {
+    border-bottom: 3px solid #01bf71;
+  }
+`
+
+const Header = ({ siteTitle, toggle }) => {
   const data = useStaticQuery(graphql`
     query {
       facial: file(relativePath: { eq: "logopng2.png" }) {
@@ -87,24 +101,36 @@ const Header = ({ siteTitle }) => {
     }
   `)
   return (
-    <Nav className="bg-light">
-      {/* <Link className="logo" to="/">
-      {siteTitle}
-    </Link> */}
-      <Link to="/">
-        <img src={data.facial.childImageSharp.fluid.src} alt="logo" />
-      </Link>
-      <ul className="text-color-secondary">
-        <li>
-          <Link to="/about">About</Link>
-        </li>
-        <li>
-          <Link to="/contact" className="btn btn-sm btn-secondary text-light">
-            Contact
-          </Link>
-        </li>
-      </ul>
-    </Nav>
+    <>
+      <Nav>
+        <NavContainer>
+          <NavLink className="text-base" to="/">
+            <img
+              src={data.facial.childImageSharp.fluid.src}
+              alt="logo"
+              style={{ width: "32px" }}
+            />
+          </NavLink>
+
+          <MobileIcon onClick={toggle}>
+            <FaBars />
+          </MobileIcon>
+
+          <NavMenu>
+            <NavItem>
+              <NavLinks to="/">Home</NavLinks>
+            </NavItem>
+
+            <NavItem>
+              <NavLinks to="/about">About</NavLinks>
+            </NavItem>
+            <NavItem>
+              <NavLinks to="/contact">Contact</NavLinks>
+            </NavItem>
+          </NavMenu>
+        </NavContainer>
+      </Nav>
+    </>
   )
 }
 Header.propTypes = {
