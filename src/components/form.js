@@ -10,6 +10,7 @@ export const FormWrapper = styled.form`
   align-items: center;
   justify-content: center;
   margin: 0 auto;
+  margin-top: 2rem;
   label {
     float: left;
     text-align: start;

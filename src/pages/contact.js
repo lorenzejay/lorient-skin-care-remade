@@ -1,6 +1,7 @@
 import { graphql, useStaticQuery } from "gatsby"
 import React from "react"
 import styled from "styled-components"
+import BookNow from "../components/bookNow"
 import Form from "../components/form"
 import Hero from "../components/hero"
 import Layout from "../components/layout"
@@ -27,10 +28,9 @@ const Contact = () => {
     <Layout>
       <Hero bigText="Contact Us" image={data.facial.childImageSharp.fluid} />
       <ContactWrapper>
-        <Form
-          formTitle="Schedule Your Appointment"
-          policy="Enter your date and package in the message below. We will contact you within the next 24 hours."
-        />
+       
+        <BookNow />
+        <Form formTitle='Questions?' policy='If you have any other questions, fill up the form below. I will do my best to reach back to you within 24 hours. '/>
       </ContactWrapper>
     </Layout>
   )
