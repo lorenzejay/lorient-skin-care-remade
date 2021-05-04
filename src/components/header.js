@@ -16,6 +16,7 @@ export const Nav = styled.header`
   position: sticky;
   top: 0;
   z-index: 60;
+  padding: 0 3rem;
 `
 
 export const NavContainer = styled.div`
@@ -108,7 +109,7 @@ const Header = ({ siteTitle, toggle }) => {
             <img
               src={data.facial.childImageSharp.fluid.src}
               alt="logo"
-              style={{ width: "32px" }}
+              style={{ width: "40px", objectFit:'cover' }}
             />
           </NavLink>
 

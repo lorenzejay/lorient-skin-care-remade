@@ -9,6 +9,7 @@ import { device } from "../styles/globalstyles"
 import Welcome from "../components/welcome"
 import Testimonials from "../components/testimonials"
 import Pricing from "../components/pricing"
+import BookNow from "../components/bookNow"
 // import Button from "../components/button"
 
 export const HomePageContentPadding = styled.section`
@@ -49,6 +50,7 @@ const IndexPage = () => {
       <Welcome />
       <Features />
       <Pricing />
+      <BookNow />
 
       <Testimonials />
     </Layout>

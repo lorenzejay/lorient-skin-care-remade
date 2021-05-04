@@ -92,7 +92,7 @@ const Pricing = () => {
               <li>Basic Extraction</li>
               <li>Basic Mask Peel</li>
               <li>UV Light Treatment</li>
-              <li>Face and Arm Lotion</li>
+              <li>Face and Arm Massage</li>
             </ul>
           </div>
         </PricingCards>

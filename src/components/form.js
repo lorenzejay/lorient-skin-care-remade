@@ -1,6 +1,6 @@
-import React, { useState } from "react"
+import React from "react"
 import styled from "styled-components"
-import { device, primary, secondary } from "../styles/globalstyles"
+import { device, primary } from "../styles/globalstyles"
 import Button from "./button"
 
 export const FormWrapper = styled.form`
