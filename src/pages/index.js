@@ -44,8 +44,8 @@ const IndexPage = () => {
         image={data.facial.childImageSharp.fluid}
         bigText="L'orient"
         smallText="Keeping your skin healthy, youthful and glowing."
-        buttonLink="/about"
-        buttonText="Learn More"
+        buttonLink="/book"
+        buttonText="Book Now"
       />
       <Welcome />
       <Features />
