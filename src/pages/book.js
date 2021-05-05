@@ -26,7 +26,7 @@ const Contact = () => {
 
   return (
     <Layout>
-      <Hero bigText="Contact Us" image={data.facial.childImageSharp.fluid} />
+      <Hero bigText="Book Now" image={data.facial.childImageSharp.fluid} />
       <ContactWrapper>
        
         <BookNow />

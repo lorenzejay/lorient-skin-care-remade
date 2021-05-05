@@ -128,7 +128,7 @@ const Header = ({ siteTitle, toggle }) => {
               <NavLinks to="/book">Book Now</NavLinks>
             </NavItem>
             <NavItem>
-              <NavLinks to="/contact">Contact</NavLinks>
+              <NavLinks to="/about">About</NavLinks>
             </NavItem>
           </NavMenu>
         </NavContainer>
