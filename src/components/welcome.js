@@ -120,7 +120,7 @@ const Welcome = () => {
 
           <h4>Lorient Skin Care</h4>
         </HeroContainer> */}
-        <img src={data.facial.childImageSharp.fluid.src} />
+        <img src={data.facial.childImageSharp.fluid.src} alt='Facial Header Media'/>
 
         <p>
           L'ORIENT Skin Care specializes in custom skin care treatment. I 

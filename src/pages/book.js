@@ -14,7 +14,7 @@ export const ContactWrapper = styled.section`
 const Contact = () => {
   const data = useStaticQuery(graphql`
     query {
-      facial: file(relativePath: { eq: "facial2.jpg" }) {
+      facial: file(relativePath: { eq: "facial2-min.jpg" }) {
         childImageSharp {
           fluid(maxWidth: 1920, quality: 60) {
             ...GatsbyImageSharpFluid_withWebp

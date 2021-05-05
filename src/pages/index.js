@@ -24,9 +24,9 @@ export const HomePageContentPadding = styled.section`
 const IndexPage = () => {
   const data = useStaticQuery(graphql`
     query {
-      facial: file(relativePath: { eq: "facial5.jpg" }) {
+      facial: file(relativePath: { eq: "facial5-min.jpg" }) {
         childImageSharp {
-          fluid(maxWidth: 1920, quality: 90) {
+          fluid(maxWidth: 1920, quality: 40) {
             ...GatsbyImageSharpFluid_withWebp
           }
         }

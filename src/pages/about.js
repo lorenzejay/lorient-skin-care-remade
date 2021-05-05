@@ -26,6 +26,8 @@ export const AboutWrapper = styled.section`
       line-height: 2rem;
       font-size: 1.2rem;
       margin: 15px;
+      text-align: start;
+      margin-right: auto;
     }
     ul {
       list-style: none;
@@ -49,9 +51,9 @@ export const AboutWrapper = styled.section`
 const About = () => {
   const data = useStaticQuery(graphql`
     query {
-      facial: file(relativePath: { eq: "facial7.jpg" }) {
+      facial: file(relativePath: { eq: "facial7-min.jpg" }) {
         childImageSharp {
-          fluid(maxWidth: 1920, quality: 60) {
+          fluid(maxWidth: 1920, quality: 40) {
             ...GatsbyImageSharpFluid_withWebp
           }
         }
@@ -62,7 +64,7 @@ const About = () => {
     <Layout>
       <Hero
         image={data.facial.childImageSharp.fluid}
-        bigText="About Lorient"
+        bigText="About L'orient"
         forComponent={true}
       />
 
@@ -76,7 +78,7 @@ const About = () => {
           involves customized treatment meant to target your specific concerns
           and issues.
         </p>
-        <p>
+        <p style={{fontWeight:'bold'}}>
           We tailor every facial to keep yopur skin glowing and look its best.
         </p>
         <p>

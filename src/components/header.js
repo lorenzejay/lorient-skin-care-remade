@@ -16,7 +16,9 @@ export const Nav = styled.header`
   position: sticky;
   top: 0;
   z-index: 60;
-  padding: 0 3rem;
+  @media screen and (min-width: 768px){
+    padding: 0 3rem;
+  }
 `
 
 export const NavContainer = styled.div`
@@ -123,7 +125,7 @@ const Header = ({ siteTitle, toggle }) => {
             </NavItem>
 
             <NavItem>
-              <NavLinks to="/about">About</NavLinks>
+              <NavLinks to="/book">Book Now</NavLinks>
             </NavItem>
             <NavItem>
               <NavLinks to="/contact">Contact</NavLinks>

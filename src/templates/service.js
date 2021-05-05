@@ -27,9 +27,9 @@ export const ServiceWrapper = styled.section`
 const Service = context => {
   const data = useStaticQuery(graphql`
     query {
-      facial: file(relativePath: { eq: "facial4.jpg" }) {
+      facial: file(relativePath: { eq: "facial4-min.jpg" }) {
         childImageSharp {
-          fluid(maxWidth: 1920, quality: 65) {
+          fluid(maxWidth: 1920, quality: 40) {
             ...GatsbyImageSharpFluid_withWebp
           }
         }
@@ -50,7 +50,7 @@ const Service = context => {
             return <li key={benefit.id}>{benefit}</li>
           })}
         </ul>
-        <Link to="/contact">
+        <Link to="/book">
           <Button color={secondary}>Book Now</Button>
         </Link>
         {blogSlug && (

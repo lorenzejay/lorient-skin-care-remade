@@ -69,8 +69,8 @@ const SideBar = ({ isOpen, toggle }) => {
       <SidebarWrapper>
         <SideBarMenu>
           <SidebarLink to="/">Home</SidebarLink>
-          <SidebarLink to="/contact">Contact</SidebarLink>
-          <SidebarLink to="/about">about</SidebarLink>
+          <SidebarLink to="/book">Book Now</SidebarLink>
+          <SidebarLink to="/about">About</SidebarLink>
         </SideBarMenu>
       </SidebarWrapper>
     </SidebarContainer>
