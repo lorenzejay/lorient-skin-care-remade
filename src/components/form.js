@@ -44,11 +44,7 @@ export const FormWrapper = styled.form`
 const Form = ({ formTitle, policy }) => {
   return (
     <FormWrapper
-      method="post"
-      netlify-honeypot="bot-field"
-      data-netlify="true"
-      name="contact"
-    >
+      method="post" netlify-honeypot="bot-field" data-netlify="true" name="contact"> 
       <input type="hidden" name="bot-field" />
       <input type="hidden" name="form-name" value="contact" />
 
@@ -56,7 +52,7 @@ const Form = ({ formTitle, policy }) => {
       <p>{policy}</p>
       <label htmlFor="name">Name</label>
       <input name="Name" />
-      <label htmlFor="name">Email</label>
+      <label htmlFor="email">Email</label>
       <input name="email" type="email" />
       <label htmlFor="number">Phone Number</label>
       <input name="number" type="number" />
