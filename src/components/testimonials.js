@@ -20,6 +20,7 @@ export const Testimonial = styled.section`
     }
   }
   @media ${device.mobileS} {
+    height: auto;
     flex-direction: column;
     justify-content: space-evenly;
     .testimonial-title {

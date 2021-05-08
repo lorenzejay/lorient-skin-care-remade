@@ -29,12 +29,13 @@ export const PricingSection = styled.section`
   }
 `
 export const PricingCards = styled.div`
+  margin: 0px auto;
   @media ${device.mobileS} {
     padding: 5%;
     .card-title {
-      height: 15vh;
-
-      width: 75vw;
+      min-height: 20vh;
+      padding: 10px 0;
+      width: auto;
       display: flex;
       flex-direction: column;
       align-items: center;
